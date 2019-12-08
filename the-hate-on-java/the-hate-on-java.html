@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="../styles.css">
+    <head>
+        <title>&lt;theBlog/&gt; - Why all the hate for Java?</title>
+    </head>
+    <body class="grid">
+        <header class="header">
+            <a href="../index.html">
+                <h1>&lt;theBlog/&gt;</h1>
+            </a>
+            <hr>
+        </header>
+        <main class="main">
+            <div>
+                <h2>Why all the hate for Java?</h2>
+                <i>Published on December 9, 2019 by Maxim Atanasov</i><br><br>
+                    <p>
+                    Java has been one of the top languages to dislike basically since it's inception. And while the language
+                    definetly has it's shortcomings, I don't think it deserves all of the hate it gets. Yes, the language is
+                    (very) verbose, yes, it's not as fast as compiled languages and YES, there are too many <code>ServiceConfigurationBeanFactories</code>,
+                    but I'll try to make a case for the language and it's surrounding ecosystem anyway.<br>
+    
+                    <br>
+                    I'll start by adressing some of the key complaints people have.<br>
+
+                    <h3><i>"Java is slow"</i></h3>
+                    Well, is it really? Yes, most software written in Java is slower than one written in C/C++ or any other compiled language,
+                     but I don't think Java is to blame here. The JVM is (very) fast and the JDK provides tools to facilitate profililng and 
+                     performance tuning. The problem, I believe, is in how most Java programmers approach writing code. People simply aren't
+                     <i>trying</i> to write perfromant code. The culture around the language is such, that performance always takes a back seat 
+                     to maintainablity, readability and testability. Still, a lot of Java programmers (myself inculuded) will end up writing 
+                    unmaintainable spaghetti code with no tests that is also slow. We'll also mentally support ourselves with thoughts such as:
+                    <i>"The JVM will optimize this away, right?"</i>, <i>"Computers are, like, super fast nowadays y'know."</i> and the
+                     widely known <i>"Premature optimization is the root of all evil!"</i>. That last one tends to be interpreted the same as the
+                     first two and that is just <i>wrong</i>! If your algorithms are slow, if you haven't put any thought into the data structures you 
+                     are using and if you simply don't care about how fast your code is, then yes it will be slow and inefficent. I realize this 
+                     isn't C++ where one might care about virtual (abstract) method calls indirection overhead or something like that, sure, 
+                     Java programmers don't and shoudn't care about that, so go and write all those interfaces if that makes your code more readable.
+                     But don't wonder why things slow down when you call 5 different Factory methods in two nested loops (Yes, I'm exaggerating a lot,
+                      but you get the point). DO care about speed. At least a little bit. To this paragraph I must add that I am in no way an example 
+                      in this regard. I am very much new to perfromance tuning, but I try to take it into consideration it when I write code and I can 
+                      see that things do turn out better when I do so. 
+
+                    <h3><i>"Java is verbose"</i></h3>
+                      Yeah, it is. Really not much to say here. Java makes you type out everything multiple times. It's annoying
+                      sometimes. <code>Person person = new Person()</code> anyone? This is partly due to the naming convetion 
+                      Java has. Other languages on the JVM have tried to avoid such tautologies (Scala, Kotlin, Groovy).
+                      One could argue this verbosity causes confusion and eyestrain. I, personally, don't think it is <i>that</i> 
+                      bad and is rather more of a <i>"This is why Java sucks!!1!"</i> kind of argument for most people. 
+                      Any decent programmer will get used to it easily and the language has also gotten less verbose over 
+                      the years by introducing the diamond syntax for generics, lambda type inference and recently (Java 10+) 
+                      the <code>var</code> keyword (or rather type name). So yes, Java is annoying like that, but it is getting better.
+                    <br>
+
+                    <h3><i>"Java is old" or "Who uses Java anyway?"</i></h3>
+                    Yes, Java is old, but so are many other languages. In fact one should see this as an advantage.
+                    Partly due to it's age, it has exceptional tooling, many established libraries and frameworks 
+                     and pretty much everyone has had some contact with Java. So finding a Java programmer is easy and 
+                    finding a job as a Java programmer is also not a herculian task. An lots of companies, 
+                    small and large, use Java as their primary programming language, especially here in Germany,
+                     where everyone learns java in university.
+
+                    <h3><i>"The frameworks are bloated"</i></h3>
+                    Many people complain that the standart way to develop web applications in Java, that being Java EE
+                    or Spring-Boot, is painfuly slow to setup and bloated. I disagree. Indeed, these frameworks are huge
+                    and contain code for pretty much every use case under the sun and every other star out there (looking 
+                    at you, Spring-Framework), but you don't <i>have</i> to use all of that in your application, you don't
+                    even have to include it. You'll be pleasantly surprised to find out that creating a web app is extremely
+                    fast. I recently built a small test application with a few REST-endpoints, minimal bussiness logic and 
+                    a database behind it all in just 30-40 minutes. 
+                    
+
+                </p>
+            </div>
+        </main>
+        <aside class="right">
+        </aside>
+        <br>
+        <footer class="footer">
+        <br>
+        <a href="../about.html">About</a> | <a href="../contact.html">Contact</a>
+        </footer>
+    </body>
+</html>
