@@ -25,7 +25,7 @@
       'footer';
     grid-gap: 10px;
     padding: 10px;
-    text-size-adjust: none;
+    text-size-adjust: auto;
 }
 
 @media only screen and (min-width: 1024px) and (max-resolution: 200dpi) {
