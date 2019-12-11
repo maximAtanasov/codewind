@@ -10,7 +10,7 @@
 
 .main { 
         grid-area: main;
-        min-height: calc(100vh - 200px);
+        min-height: calc(100vh - 220px);
       }
 
 .right { grid-area: right; }
@@ -25,7 +25,7 @@
       'footer';
     grid-gap: 10px;
     padding: 10px;
-    text-size-adjust: auto;
+    text-size-adjust: none;
 }
 
 @media only screen and (min-width: 1024px) and (max-resolution: 200dpi) {
