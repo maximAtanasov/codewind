@@ -11,7 +11,6 @@
 }
 
 
-
 .main { 
         grid-area: main;
         min-height: calc(100vh - 220px);
@@ -29,8 +28,7 @@
       'footer';
     grid-gap: 10px;
     padding: 10px;
-    text-size-adjust: none;
-    font-size: x-large;
+    text-size-adjust: auto;
     color: black;
     font-family: sans-serif;
 }
