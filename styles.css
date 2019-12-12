@@ -6,7 +6,11 @@
 .header > a { 
   text-decoration: none;
   color: black;
+  font-family: monospace;
+  font-size: x-large;
 }
+
+
 
 .main { 
         grid-area: main;
@@ -25,18 +29,19 @@
       'footer';
     grid-gap: 10px;
     padding: 10px;
-    text-size-adjust: auto;
+    text-size-adjust: none;
+    font-size: x-large;
+    color: black;
+    font-family: sans-serif;
 }
 
 @media only screen and (min-width: 1024px) and (max-resolution: 200dpi) {
   .grid {
-    display: grid;
     grid-template-areas:
     'header header header header header header header'
     'main main main main right right right'
     'footer footer footer footer footer footer footer';
-    grid-gap: 10px;
-    padding: 10px;
+    font-size: large;
   }
 
   .main { 
