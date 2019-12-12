@@ -10,7 +10,6 @@
   font-size: x-large;
 }
 
-
 .main { 
         grid-area: main;
         min-height: calc(100vh - 220px);
